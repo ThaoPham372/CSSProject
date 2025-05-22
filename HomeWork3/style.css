@@ -1,0 +1,57 @@
+/* Skip link - chỉ hiển thị khi focus */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  z-index: 100;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Navigation dùng flex */
+nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color: #e0e0e0;
+  padding: 10px;
+}
+
+/* Navigation link hover */
+nav a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Gallery dùng grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Ảnh sử dụng box model và hiệu ứng hover */
+img {
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 8px;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+/* nth-child để thay đổi border-radius */
+.gallery img:nth-child(odd) {
+  border-radius: 20px;
+}
+.gallery img:nth-child(even) {
+  border-radius: 50%;
+}
