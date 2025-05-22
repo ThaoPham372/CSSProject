@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  background-color: #eee;
+}
+
+nav {
+  background-color: #ccc;
+  display: inline-block;
+  width: 80%;
+}
+
+nav img {
+  width: 10%;
+}
+
+main {
+  background-color: #f8f8f8;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #ccc;
+}
+
+/* Comment out phần li */
+/*
+li {
+  display: inline-block;
+  width: 100px;
+}
+*/
+
+h1 {
+  text-align: center;
+  font-family: Georgia, serif;
+  color: black;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Grid class */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: start;
+  row-gap: 15px;
+}
+
+.grid img {
+  width: 100%;
+}
+
+/* Flex class */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
